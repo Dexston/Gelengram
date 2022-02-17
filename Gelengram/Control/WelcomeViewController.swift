@@ -16,14 +16,12 @@ class WelcomeViewController: UIViewController {
     var userManager = UserManager()
     
     override func viewWillAppear(_ animated: Bool) {
-        emailField.text = "test@2.com"
-        passwordField.text = "qwerty"
+        emailField.text = ""
+        passwordField.text = ""
         errorLabel.text = ""
         errorLabel.isHidden = true
-        
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
