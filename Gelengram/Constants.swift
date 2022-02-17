@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct K {
-    struct Segues {
+enum K {
+    enum Segues {
         static let loginToFeed = "LoginToFeed"
         static let loginToReg = "LoginToRegistration"
         
@@ -20,13 +20,13 @@ struct K {
         static let postToProfile = "PostToProfile"
     }
     
-    struct PostCardCell {
+    enum PostCardCell {
         static let identifier = "reusablePostCell"
         static let nibName = "PostCardCell"
         
     }
     
-    struct FStore {
+    enum FStore {
         static let postsCollection = "posts"
         static let postAuthorID = "authorID"
         static let postDate = "date"

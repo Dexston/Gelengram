@@ -51,10 +51,9 @@ class UserManager {
     
     func register(_ email: String, _ password: String, _ realName: String) {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            if let e = error {
-                self.delegate?.registerResult(isSuccessfull: false, errorText: e.localizedDescription)
-            } else {
-                let user = Auth.auth().currentUser!
+            if let error = error {
+                self.delegate?.registerResult(isSuccessfull: false, errorText: error.localizedDescription)
+            } else if let user = authResult?.user {
                 self.db.collection(K.FStore.usersCollection).document(user.uid)
                     .setData([K.FStore.userNameField : realName,
                               K.FStore.userEmailField : email])
@@ -65,8 +64,8 @@ class UserManager {
     
     func logIn(_ email: String, _ password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-            if let e = error {
-                self.delegate?.logInResult(isSuccessfull: false, errorText: e.localizedDescription)
+            if let error = error {
+                self.delegate?.logInResult(isSuccessfull: false, errorText: error.localizedDescription)
             } else {
                 self.delegate?.logInResult(isSuccessfull: true, errorText: "")
             }
@@ -77,8 +76,8 @@ class UserManager {
         do {
             try Auth.auth().signOut()
             delegate?.logOutResult()
-        } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
+        } catch {
+            print("Error signing out: %@", error)
         }
     }
 }

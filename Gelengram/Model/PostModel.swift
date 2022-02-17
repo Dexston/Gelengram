@@ -8,28 +8,11 @@
 import Foundation
 
 struct PostModel {
-    var id: String
-    var authorID: String
-    var date: String
-    var image: String
-    var likes: [String]
-    
-    init() {
-        id = "0"
-        authorID = "empty"
-        date = "0"
-        image = "xmark"
-        likes = []
-    }
-    
-    init(id: String, authorID: String, date: String, image: String, likes: [String]) {
-        self.id = id
-        self.authorID = authorID
-        self.date = date
-        self.image = image
-        self.likes = likes
-    }
-    
+    var id: String = "0"
+    var authorID: String = "empty"
+    var date: String = "0"
+    var image: String = "xmark"
+    var likes: [String] = []
 }
 
 

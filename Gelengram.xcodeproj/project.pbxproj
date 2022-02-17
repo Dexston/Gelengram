@@ -11,7 +11,6 @@
 		846AD8AB274F7DD0002E10B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846AD8AA274F7DD0002E10B1 /* AppDelegate.swift */; };
 		846AD8AD274F7DD0002E10B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846AD8AC274F7DD0002E10B1 /* SceneDelegate.swift */; };
 		846AD8AF274F7DD0002E10B1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846AD8AE274F7DD0002E10B1 /* WelcomeViewController.swift */; };
-		846AD8B2274F7DD0002E10B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846AD8B0274F7DD0002E10B1 /* Main.storyboard */; };
 		846AD8B4274F7DD1002E10B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AD8B3274F7DD1002E10B1 /* Assets.xcassets */; };
 		846AD8B7274F7DD1002E10B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846AD8B5274F7DD1002E10B1 /* LaunchScreen.storyboard */; };
 		846AD8BF274FDCD2002E10B1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846AD8BE274FDCD2002E10B1 /* FeedViewController.swift */; };
@@ -27,6 +26,7 @@
 		84ED13B8277C78EF00D0F5FD /* PostManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED13B7277C78EF00D0F5FD /* PostManager.swift */; };
 		84ED13BA277CB70500D0F5FD /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED13B9277CB70500D0F5FD /* UserModel.swift */; };
 		84ED13BC277CB71900D0F5FD /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED13BB277CB71900D0F5FD /* UserManager.swift */; };
+		84F3EBA627BE96E5004A474C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F3EBA527BE96E5004A474C /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,14 +35,13 @@
 		846AD8AA274F7DD0002E10B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846AD8AC274F7DD0002E10B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		846AD8AE274F7DD0002E10B1 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		846AD8B1274F7DD0002E10B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846AD8B3274F7DD1002E10B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846AD8B6274F7DD1002E10B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846AD8B8274F7DD1002E10B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846AD8BE274FDCD2002E10B1 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		84ED139D2771D91000D0F5FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		84ED13A72771DFD600D0F5FD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = Gelengram/View/RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
-		84ED13AB27720D5F00D0F5FD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = Gelengram/View/PostViewController.swift; sourceTree = SOURCE_ROOT; };
+		84ED13A72771DFD600D0F5FD /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationViewController.swift; path = Gelengram/Control/RegistrationViewController.swift; sourceTree = SOURCE_ROOT; };
+		84ED13AB27720D5F00D0F5FD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostViewController.swift; path = Gelengram/Control/PostViewController.swift; sourceTree = SOURCE_ROOT; };
 		84ED13AD277213D400D0F5FD /* PostCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCardCell.swift; sourceTree = "<group>"; };
 		84ED13AE277213D400D0F5FD /* PostCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCardCell.xib; sourceTree = "<group>"; };
 		84ED13B127721C9500D0F5FD /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		84ED13B7277C78EF00D0F5FD /* PostManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManager.swift; sourceTree = "<group>"; };
 		84ED13B9277CB70500D0F5FD /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		84ED13BB277CB71900D0F5FD /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		84F3EBA527BE96E5004A474C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +101,7 @@
 		84ED13A42771D9D200D0F5FD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				846AD8B0274F7DD0002E10B1 /* Main.storyboard */,
+				84F3EBA527BE96E5004A474C /* Main.storyboard */,
 				84ED13AE277213D400D0F5FD /* PostCardCell.xib */,
 			);
 			path = View;
@@ -198,8 +198,8 @@
 				846AD8B7274F7DD1002E10B1 /* LaunchScreen.storyboard in Resources */,
 				84ED139E2771D91000D0F5FD /* GoogleService-Info.plist in Resources */,
 				846AD8B4274F7DD1002E10B1 /* Assets.xcassets in Resources */,
+				84F3EBA627BE96E5004A474C /* Main.storyboard in Resources */,
 				84ED13B0277213D400D0F5FD /* PostCardCell.xib in Resources */,
-				846AD8B2274F7DD0002E10B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,14 +229,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		846AD8B0274F7DD0002E10B1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				846AD8B1274F7DD0002E10B1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		846AD8B5274F7DD1002E10B1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
